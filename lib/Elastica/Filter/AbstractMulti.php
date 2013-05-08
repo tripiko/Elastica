@@ -66,4 +66,11 @@ abstract class AbstractMulti extends AbstractFilter
 
         return $data;
     }
+
+    /**
+     * @return array An array of already set filters.
+     */
+    public function getFilters() {
+        return $this->_filters;
+    }
 }
